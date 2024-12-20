@@ -15,7 +15,7 @@
 -> eg :- cons bigNumber =  12345467897432315412498n
 
 ** Referance (Non-Primitive) **
-#-> typeof(Non- Primitive) :- object
+- typeof(Non- Primitive) :- object
 
 - Array
 -> eg:- let array = ["string" , "integer" ,"GitHub"]
