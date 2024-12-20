@@ -37,3 +37,35 @@ console.log(typeof booleanIsLoggedIN)
 " " => false
 "shreya" => true
 */
+
+
+let negValue = -3
+let posVlue  = 5
+
+let oppositeValue = -negValue
+let oppose_Value  = -posVlue
+
+console.log(oppositeValue)
+console.log(oppose_Value)
+
+
+let gratitude = "Good Evening "
+let _name      = "GitHub "
+
+let newGrattitude = gratitude + _name
+
+console.log(newGrattitude)
+
+
+console.table([
+    "1" + 2 ,
+     1 + "2" ,
+     "1" + 2 + 2 ,
+     1 + 2 + "5" ]);
+// console.log('1' + 2)
+// console.log(1 + "2")
+// console.log("1" + 2 + 2)
+// console.log(1 + 2 + "5")
+
+console.log(+true)                     
+//   + => act as a conversion operator
