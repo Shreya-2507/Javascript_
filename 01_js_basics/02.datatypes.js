@@ -6,6 +6,8 @@ console.log(3+3)
 
 console.log("shreya")
 
+
+
 // datatype => object
 
 console.log(typeof (null))
