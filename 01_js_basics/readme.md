@@ -31,7 +31,7 @@
                  console.log("hello function");
 }
 
-                                        **************************** Stack and Heap memory ************************************
+                                 **************************** Stack and Heap memory *******************************
 
 
 - stack (primitive) 
