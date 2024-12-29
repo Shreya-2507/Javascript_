@@ -69,7 +69,7 @@ console.log(instructor)
 // [
 //     {}
 //     {}
-]
+// ]
 
 
 
