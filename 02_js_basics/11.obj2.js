@@ -43,6 +43,34 @@ console.log(dataUser[0].hasOwnProperty("email"));
 console.log(dataUser[1].hasOwnProperty("name"));   
 console.log(dataUser[2].hasOwnProperty("greet"));  
 
+// object-destructure
+const course = {
+    courseName : "js series",
+    coursePrize : 0 ,
+    courseInstructor : "Hitesh Choudhary"
+}
+
+console.log(course.courseInstructor)
+
+// de-structure Method
+
+const {courseInstructor:instructor} = course
+console.log(instructor)
+
+
+// json syntax
+// {
+//     "name":"shreya",
+//     "age" : "None"
+// }
+
+//or
+
+// [
+//     {}
+//     {}
+]
+
 
 
 
