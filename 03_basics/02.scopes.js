@@ -75,6 +75,7 @@ if (true){
 // Hoisting with Function Declarations
 
 console.log(addOne(5))
+
 function addOne(num){
     return num + 1
 }
