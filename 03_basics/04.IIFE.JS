@@ -1,4 +1,4 @@
-// Imedietely Invoked Function Expression
+// Imedietely Invoked Function Expression (IIFE)
 
 // Named IIFE
 (function division(){
