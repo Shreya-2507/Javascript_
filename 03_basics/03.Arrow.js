@@ -15,7 +15,7 @@ const user = {
 // user.shop = "PizzaHut"
 // user.welcomeMessege()
 
-  console.log(this);  // it's ccurrent context is node environment which is empty {} (object)
+  console.log(this);  // it's current context of node environment which is empty {} (object)
 
 
 // Browser has windows as a current context
