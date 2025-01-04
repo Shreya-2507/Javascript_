@@ -18,7 +18,7 @@ console.log(myDate.toLocaleTimeString())
 let newDate = new Date(2025, 0 , 4)
 console.log(newDate.toDateString());
 
-let date = new Date(2024 , 1 , 4 , 10 , 36,4)
+let date = new Date(2024 , 0 , 4 , 10 , 36,4)
 console.log(date.toLocaleString ());
 
 let _date = new Date ("12-27-2024")
