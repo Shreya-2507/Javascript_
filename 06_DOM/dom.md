@@ -16,8 +16,10 @@
                                                        /     \               \
                                                       /       \               \
                                                      /         \                --------> |div| --> Attribute
-                                Attribut <-- |  meta |       | title|                       / \
-                                                                 |                         /   \
-                                                                 *                      h1>     p>
-                                                            | text node|
+                                Attribut <-- |  meta |       | title|                       /   \
+                                                                 |                         /     \
+                                                                 *                      h1>        p>
+                                                            | text node|                 |         |
+                                                                                         *         *
+                                                                                     text node   text node
                                                
