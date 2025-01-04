@@ -29,6 +29,15 @@ console.log(url.replace(/%20/g, '-'));
 const Url = "https://github.com/shreya20%Tiwari";
 console.log(Url.replace(/20%/g, '-'));
 
-console.log(newName.split('-'))
-consol
+  console.log(newName.split('-'))
+
+
+ let newName_ = "Shreya-009";
+let parts = newName_.split('-');
+
+console.log(parts)
+console.log(parts[0]);  // Shreya
+console.log(parts[1]);  // 009
+
+
 
