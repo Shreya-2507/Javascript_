@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-js-Function</title>
+</head>
+
+<body style="background-color: black;  color: beige;">
+
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+</body>
+
+<script>
+    function addlanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+
+    addlanguage("python")
+    addlanguage("c++")
+
+    function addOptiLnaguage(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addOptiLnaguage("MERN")
+    addOptiLnaguage("MEAN")
+
+    // EDIT
+    const edit_Element = document.querySelector("li:nth-child(3)")
+    // edit_Element.innerHTML = "Mojo"
+
+    // document.querySelector("li:nth-child(4)").createTextNode = "PHP"
+
+    const new_Li = document.createElement("li")
+    new_Li.textContent = "Golang"
+    edit_Element.replaceWith(new_Li)
+
+    // edit
+    const firstLang = document.querySelector("li:last-child")
+    firstLang.outerHTML = "<li>Typescript</li>"
+
+    //Remove
+    const item = document.querySelector("li:nth-child(4)")
+    item.remove()
+
+</script>
+
+</html>
