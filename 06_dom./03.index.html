@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: bisque;
+    }
+</style>
+
+<body>
+
+</body>
+<script>
+
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'main'
+    // div.id = math.round(math.random() * 100 + 1)
+    div.setAttribute("title", "element creation")
+    div.style.backgroundColor = "orange"
+    div.style.padding = "12px"
+    // div.innerText = "javascript or problem"                         // it overwrites
+    const text = document.createTextNode("javascript or problem")
+    div.appendChild(text)
+
+    document.body.appendChild(div)
+
+    // assignment
+    // 1) wrap in function push argument for overwrite innertext or backgroundColor
+    // 2) run a loop 5 times which takes more than one color and apply all of this
+
+</script>
+
+</html>
