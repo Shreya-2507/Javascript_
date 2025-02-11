@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Async - setINterval</title>
+</head>
+
+<body>
+
+    <h1>setInterval "👐🏽" clearInterval</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+
+    let intervalID;
+
+    const start_changes = function () {
+        document.querySelector('h1').innerHTML = "😵‍💫"
+        console.log("start changes");
+    }
+
+    document.querySelector('#start').addEventListener('click', function () {
+        if (!intervalID) {
+            intervalID = setInterval(start_changes, 2000)
+
+        }
+
+    });
+
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(intervalID)
+        intervalID = null
+        console.log("stopped changes");
+        document.querySelector('h1').innerHTML = 'setInterval "👐🏽" clearInterval'
+
+
+    });
+
+
+
+
+</script>
+
+</html>
