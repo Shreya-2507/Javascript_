@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP_REQUEST</title>
+</head>
+
+<body>
+    <h1>learn about htttp request</h1>
+</body>
+
+<script>
+
+
+    // XML Http request
+
+    const requestUrl = 'https://api.github.com/users/shreya-2507'
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+
+            console.log(data.followers);
+            console.log(data.url)
+            console.log(data.avatar_url);
+
+        }
+
+    }
+    xhr.send();
+
+    const request = 'https://api.github.com/users/hiteshChoudhary'
+
+    const xml = new XMLHttpRequest();
+    xml.open('GET', request)
+    xml.onreadystatechange = function () {
+        console.log(xml.readyState);
+        if (xml.readyState === 4) {
+            const info = JSON.parse(this.responseText)
+            console.log(typeof info);
+
+            console.log(info.followers);
+            console.log(info.bio);
+            console.log(info.avatar_url);
+
+        }
+
+    }
+    xml.send();
+</script>
+
+// v8 engine
+
+</html>
