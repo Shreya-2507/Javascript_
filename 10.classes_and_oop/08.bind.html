@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+
+<body>
+
+    <button>button clicked</button>
+
+</body>
+
+<script>
+    class React {
+        constructor() {
+            this.library = "React";
+            this.server = "hhtp://localhost:300";
+
+
+            document.querySelector('button').addEventListener("click", this.handleclick.bind(this));
+        }
+
+        handleclick() {
+            console.log("button clicked");
+            console.log(this);
+            console.log(this.library);
+            console.log(this.server);
+
+
+        }
+
+    }
+
+    const App = new React();
+</script>
+
+</html>
+
+<!-- 🔗 What is bind() in JavaScript?
+bind() is a method in JavaScript that lets you permanently attach a specific this value to a function, without calling it immediately.
+
+💡 Why use bind()?
+In JavaScript, the value of this can change based on how a function is called, especially in cases like:
+
+Event handlers
+
+Callback functions
+
+Assigning object methods to variables
+
+Using bind() helps you lock the this keyword to refer to a specific object. -->
