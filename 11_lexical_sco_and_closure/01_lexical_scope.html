@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    function outer() {
+        let name = "shreya";
+
+        function inner() {
+            let name_ = "big brother";
+            console.log(name);
+        }
+        function innertwo() {
+            console.log(name_);
+            console.log(name);
+        }
+        inner()
+        innertwo()
+    }
+    outer()
+</script>
+
+
+<!-- inner() is lexically inside outer()
+
+So inner() has access to name, even though name is not declared inside inner()
+
+This is lexical scoping
+
+💡 Important Points:
+Scope is decided at the time of writing code, not at runtime
+
+Inner functions remember the scope they were created in
+
+This leads to the concept of closures (functions that remember outer variables) -->
+
+</html>
