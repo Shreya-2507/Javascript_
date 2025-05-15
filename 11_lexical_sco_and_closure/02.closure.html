@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+
+<body>
+
+    <button id="orange">orange button</button>
+    <button id="green">green button</button>
+
+</body>
+
+<script>
+
+    //    A closure is when a function "remembers" the variables from its outer scope, even after that outer function has finished executing.
+
+    //In simple words:
+
+    //A closure allows a function to access variables from its parent scope even after the parent function has returned. -
+
+
+
+    //   document.getElementById("orange").addEventListener("click", function () {
+    //      document.body.style.backgroundColor = "orange";
+    //  });
+    //  document.getElementById("green").addEventListener("click", function () {
+    //      document.body.style.backgroundColor = "green";
+    //  });  
+
+    function clickHandler(color) {
+        // color is a closure
+        return function () {
+            document.body.style.backgroundColor = `${color}`;
+        }
+    }
+
+
+    document.getElementById("orange").onclick = clickHandler("orange");
+    document.getElementById("green").onclick = clickHandler("green");
+
+
+</script>
+
+</html>
